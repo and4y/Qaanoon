@@ -11,7 +11,7 @@
   <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
   <br>
   <div class="w3-padding w3-center">
-    <img class="w3-circle" src="img_avatar.jpg" alt="avatar" style="width:75%">
+    <img class="w3-circle" src="./contant/resources/logo/Header/Header.png" alt="avatar" style="width:75%">
   </div>
 </div>
 <a class="w3-bar-item w3-button" href="#">Facebook</a>
@@ -23,38 +23,50 @@
 
 <header class="w3-bar w3-card w3-theme">
   <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
-  <h1 class="w3-bar-item">Qaanoon</h1>
+  <h1 class="w3-bar-item">ދިވެހިރާއްޖޭގެ ގާނޫނު</h1>
 </header>
 
 <div class="w3-container">
 <hr>
 <div class="w3-cell-row">
   <div class="w3-cell" style="width:30%">
-    <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
+    <img class="w3-circle" src="./contant/resources/icons/PDF.png" style="width:100%">
   </div>
   <div class="w3-cell w3-container">
     <h3>2008</h3>
-    <p>Qaanoon Asaasee</p>
+    <p>ޤާނޫން އަސާސީ</p><a href="./file/2008.pdf">
   </div>
 </div>  
 <hr>
 <div class="w3-cell-row">
   <div class="w3-cell" style="width:30%">
-    <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
+    <img class="w3-circle" src="./contant/resources/icons/PDF.png" style="width:100%">
   </div>
   <div class="w3-cell w3-container">
-    <h3>12/2009</h3>
-    <p>Kudakudinamedhu jinasee gona </p>
+    <h3>12/2016</h3>
+    <p> ޖިނާޢީ އިޖުރާތުގެ ޤާނޫން </p><a href="./file/12-2016.pdf">
   </div>
 </div>
 <hr>
 <div class="w3-cell-row">
   <div class="w3-cell" style="width:30%">
-    <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
+    <img class="w3-circle" src="./contant/resources/icons/PDF.png" style="width:100%">
   </div>
   <div class="w3-cell w3-container">
-    <h3>14/2016</h3>
-    <p>CPRC</p>
+    <h3>09/2014</h3>
+    <p> ޤާނޫނުލް އުޤޫބާތު</p><a href="./file/9-2014.pdf">
+  </div>
+</div>
+<hr>
+</div>
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="./contant/resources/icons/PDF.png" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>03/2012</h3>
+    <p>  ގެވެށި އަނިޔާ ހުއްޓުވުމުގެ</p><a href="./file/3-2012.pdf">
   </div>
 </div>
 <hr>
