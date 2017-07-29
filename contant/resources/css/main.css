@@ -338,6 +338,7 @@ i {
 }
 header {
     background-color: #ffffff;
+    text-align: center;
 }
 html, body {
     font-weight: 300;
