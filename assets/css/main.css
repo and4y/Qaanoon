@@ -87,12 +87,14 @@ a:after {
 
 .navbar {
 	text-transform: uppercase;
+	font-weight: 700;
 	margin-bottom: 0px;
+	direction: rtl;  /* Right to Left */
 }
 
 .navbar-inverse {
-	padding-bottom: 16px;
-	padding-top: 16px;
+	padding-bottom: 08px;
+	padding-top: 08px;
 }
 
 .navbar-inverse {
@@ -102,6 +104,7 @@ a:after {
 
 .navbar-inverse .navbar-nav > li > a {
 	color: white;
+	direction: rtl;  /* Right to Left */
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -113,7 +116,7 @@ a:after {
 	font-weight: 700;
 	font-size: 28px;
 	letter-spacing: 1px;
-}
+    }
 
 .navbar-inverse .navbar-brand {
 	color: white;
@@ -152,18 +155,21 @@ a:after {
 
 #footer {
 	background-color: #2f2f2f;
-	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-top: 30px;
+	padding-bottom: 30px; 
 }
 
 #footer p {
 	color: white;
+	direction: rtl;  /* Right to Left */
+
 }
 
 #footer h4 {
 	color: white;
 	text-transform: uppercase;
 	padding-bottom: 20px;
+	direction: rtl;  /* Right to Left */
 }
 
 
