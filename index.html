@@ -3,287 +3,133 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Add to home screen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Qaanoon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-icon-180x180.png">    
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<!-- Add to home screen Chrome and Android -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <meta name="description" content="Maldives Laws">
-    <meta name="keywords" content="Maldives, dhivehi, qaanoon, law, rajje, mvlaws, qaanoon asaasee, laws, qaanoontha, dhivehirajje qaanoon">
-    <title>Qaanoon</title>
-     <meta property="og:title" content="Laws">
-    <meta property="og:site_name" content="Qaanoon">
-    <meta property="og:description" content="Maldives Laws">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/font-awesome.css" />
-	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-	<link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Qaanoon - Mv Laws </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
 	  <link rel="manifest" href="/manifest.json">
-	<link rel="apple-touch-icon" sizes="57x57" href="./img/logo/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./img/logo/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./img/logo/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./img/logo/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./img/logo/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./img/logo/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./img/logo/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./img/logo/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./img/logo/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="./img/logo/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./img/logo/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./img/logo/m/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./img/logo/favicon-16x16.png">
-    <!-- =======================================================
-        Theme Name: Hidayah
-        Theme URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
-        Author: BootstrapMade
-        Author URL: https://bootstrapmade.com
-    ======================================================= -->
-    <script type="text/javascript">
-        (function(document,navigator,standalone) {
-            // prevents links from apps from oppening in mobile safari
-            // this javascript must be the first script in your <head>
-            if ((standalone in navigator) && navigator[standalone]) {
-                var curnode, location=document.location, stop=/^(a|html)$/i;
-                document.addEventListener('click', function(e) {
-                    curnode=e.target;
-                    while (!(stop).test(curnode.nodeName)) {
-                        curnode=curnode.parentNode;
-                    }
-                    // Condidions to do this only on links to your own app
-                    // if you want all links, use if('href' in curnode) instead.
-                    if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
-                        e.preventDefault();
-                        location.href = curnode.href;
-                    }
-                },false);
-            }
-        })(document,window.navigator,'standalone');
-    </script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover.zoom.js"></script>
+    <script src="assets/js/hover.zoom.conf.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <style>
-a:link{
-	color:#003366;
-}
-a:visited{
-	color:#003366;
-}
-a:hover{
-    color:#660000;
-}
-body{
-	direction:rtl;
-	font-family: Faruma;
-	font-size: 14px;
-}
-</style>
+
   <body>
-    <header>
-		<div class="main-menu">
-				<div class="row">
-		</div><center>
-<img src="./img/logo/Header/Header.png" alt="Qaanoon" style="width:400px; height:94.07867494824px;">
-</center>
-	</header>
-    
-	<!-- column content -->
-	<div id="main-content">
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">ދިވެހިރާއްޖޭގެ ޤާނޫނުތައް</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="law.html">Laws</a></li>
+            <li><a href="#">Regulations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	
+	
+	<!-- +++++ Projects Section +++++ -->
+	
+	<div class="container pt">
+		<div class="row mt centered">	
+			<div class="col-lg-4">
+				<a class="zoom green" href="qaanoon01.html"><img class="img-responsive" src="assets/img/portfolio/port01.jpg" alt="" /></a>
+				<p>APE</p>
+			</div>
+			<div class="col-lg-4">
+				<a class="zoom green" href="qaanoon01.html"><img class="img-responsive" src="assets/img/portfolio/port02.jpg" alt="" /></a>
+				<p>RAIDERS</p>
+			</div>
+			<div class="col-lg-4">
+				<a class="zoom green" href="qaanoon01.html"><img class="img-responsive" src="assets/img/portfolio/port03.jpg" alt="" /></a>
+				<p>VIKINGS</p>
+			</div>
+		</div><!-- /row -->
+		<div class="row mt centered">	
+			<div class="col-lg-4">
+				<a class="zoom green" href="qaanoon01.html"><img class="img-responsive" src="assets/img/portfolio/port04.jpg" alt="" /></a>
+				<p>YODA</p>
+			</div>
+			<div class="col-lg-4">
+				<a class="zoom green" href="qaanoon01.html"><img class="img-responsive" src="assets/img/portfolio/port05.jpg" alt="" /></a>
+				<p>EMPERORS</p>
+			</div>
+			<div class="col-lg-4">
+				<a class="zoom green" href="qaanoon01.html"><img class="img-responsive" src="assets/img/portfolio/port06.jpg" alt="" /></a>
+				<p>CHIEFS</p>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	
+	<!-- +++++ Footer Section +++++ -->
+	
+	<div id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="big-box">
-					<div class="col-lg-12">
-						<div class="col-md-4">
-						<a href="./file/2008.pdf">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.9s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i>
-										<h4 class="text-bold">ޤާނޫން އަސާސީ</h4>
-										<p>ދިވެހި ރާއްޖޭގެ ޤާނޫން އަސާސީ 2008
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.6s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i><a href="./file/12-2016.pdf">
-										<h4 class="text-bold">12/2016</h4>
-										<p>ޖިނާޢީ އިޖުރާތުގެ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i> <a href="./file/17-2014.pdf">
-										<h4 class="text-bold">17/2014</h4>
-										<p> ޖިންސީ ކުށުގެ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i> <a href="./file/9-2014.pdf">
-										<h4 class="text-bold">09/2014</h4>
-										<p>ޤާނޫނުލް އުގޫބާތު
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i><a href="3-2012.html">
-										<h4 class="text-bold">03/2012</h4>
-										<p>ގެވެށި އަނިޔާ ހުއްޓުވުމުގެ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i><a href="./file/17-2011.pdf">
-										<h4 class="text-bold">17/2011</h4>
-										<p>މަސްތުވާ ތަކެއްޗާބެހޭ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i><a href="./file/11-2010.pdf">
-										<h4 class="text-bold">11/2010</h4>
-										<p>ޢާއްމު އިޖުތިމާޢީ މިންގަނޑުތަކާއި ޙިލާފް ޢަމަލުތައް ހުއްޓުވުމުގެ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i><a href="./file/17-2010.pdf">
-										<h4 class="text-bold">17/2010</h4>
-										<p>ބިރުދެއްކުމާއި ނުރައްކާތެރި ހަތިޔާރު ގެންގުޅުން މަނާކުރުމުގެ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i><a href="./file/18-2010.pdf">
-										<h4 class="text-bold">18/2010</h4>
-										<p>ގޭންގު ކުއްތައް މަނާކުރުމުގެ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i><a href="./file/12-2009.pdf">
-										<h4 class="text-bold">12/2009</h4>
-										<p>ކުޑަކުދިންނާއިމެދު ޖިންސީގޯނާ ކުރާ ފަރާތްތަކާމެދު ޙާއްސަ އުސޫލަކުން ޢަމަލުކުރުމުގެ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i>
-										<h4 class="text-bold">05/2009</h4><a href="./file/5-2009.pdf">
-										<p>އެއްގަމު ދަތުރުފަތުރާ ބެހޭ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="box-bg">
-								<div class="wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-									<div class="align-center">
-										<i class="fa fa-book fa-5x"></i>
-										<h4 class="text-bold">09/91</h4><a href="./file/9-91.pdf">
-										<p>ކުޑަކުދިންގެ ޙައްޤުތައް ރައްކާތެރި ކުރުމުގެ ޤާނޫން
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>					
+				<div class="col-lg-4">
+					<h4>Contact</h4>
+					<p>
+						Some Address 987,<br/>
+						+34 9054 5455, <br/>
+						Madrid, Spain.
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>Follow</h4>
+					<p>
+						<a href="#">Twitter</a><br/>
+						<a href="#">Facebook</a>
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>About</h4>
+					<p>This project is for help to find the Maldives Laws in one place.</p>
+				</div><!-- /col-lg-4 -->
+			
 			</div>
-		</div>	
-	<!-- end column content -->	
-	<footer>
-		<section id="footer" class="section footer">
-			<div class="container">
-				<div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
-					<div class="col-sm-12 align-center">
-						<ul class="social-network social-circle">
-							<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-						</ul>				
-					</div>
-				</div>
-				<div class="row align-center copyright">
-					<div class="col-sm-12 text-center">
-					    <p>Copyright &copy;  Qaanoon App</p>
-                        <div class="credits">
-                            <!-- 
-                                All the links in the footer should remain intact. 
-                                You can delete the links only if you purchased the pro version.
-                                Licensing information: https://bootstrapmade.com/license/
-                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Hidayah
-                            -->
-                            <a href="https://bootstrapmade.com/"></a>
-                        </div>
-                    </div>
-				</div>
-			</div>
-		</section>
-		<a href="#" class="scrollup"><i class="fa fa-chevron-up"> </i></a>
-	</footer>		
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.isotope.min.js"></script>
-	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/functions.js"></script>
-    <script type="text/javascript">new WOW().init();</script>
-    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>   
-    
-</body>
+		
+		</div>
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
 </html>
