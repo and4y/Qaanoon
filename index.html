@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
 	<link rel="stylesheet" href="css/style.css">
+	  <link rel="manifest" href="/manifest.json">
 	<link rel="apple-touch-icon" sizes="57x57" href="./img/logo/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="./img/logo/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="./img/logo/apple-icon-72x72.png">
@@ -38,13 +39,27 @@
         Author: BootstrapMade
         Author URL: https://bootstrapmade.com
     ======================================================= -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-7941572094118182",
-    enable_page_level_ads: true
-  });
-</script>
+    <script type="text/javascript">
+        (function(document,navigator,standalone) {
+            // prevents links from apps from oppening in mobile safari
+            // this javascript must be the first script in your <head>
+            if ((standalone in navigator) && navigator[standalone]) {
+                var curnode, location=document.location, stop=/^(a|html)$/i;
+                document.addEventListener('click', function(e) {
+                    curnode=e.target;
+                    while (!(stop).test(curnode.nodeName)) {
+                        curnode=curnode.parentNode;
+                    }
+                    // Condidions to do this only on links to your own app
+                    // if you want all links, use if('href' in curnode) instead.
+                    if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                        e.preventDefault();
+                        location.href = curnode.href;
+                    }
+                },false);
+            }
+        })(document,window.navigator,'standalone');
+    </script>
   </head>
   <style>
 a:link{
@@ -268,6 +283,7 @@ body{
 	<script src="js/wow.min.js"></script>
 	<script src="js/functions.js"></script>
     <script type="text/javascript">new WOW().init();</script>
+    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>   
     
 </body>
 </html>
